@@ -1,0 +1,95 @@
+/*
+	
+	Author: K.C. Dameron
+	Credits: http://tutorialzine.com/2010/09/html5-canvas-slideshow-jquery/
+*/
+	
+.slideshow {
+	/*background-color:#F5F5F5;*/
+	background-color: #212221;
+	
+	width: 1600px; /*480px;*/
+	height: 900px; /*360px;*/
+	position:relative;
+	
+
+	/*-moz-box-shadow:0 0 22px #111;
+		-webkit-box-shadow:0 0 22px #111;
+		box-shadow:0 0 22px #111;*/
+}
+
+.slideshow ul {
+	margin: 0 auto;
+	padding-left: 0px;
+	width: 1600px; /*480px;*/
+	height: 900px; /*360px;*/
+	list-style:none outside none;
+	overflow:hidden;
+	position:absolute;	
+}
+
+.slideshow li{
+    position:absolute;
+    display:none;
+    z-index:10;
+}
+
+.slideshow li:first-child {
+    display:block;
+    z-index:1000;
+}
+
+.slideshow .slideActive{
+    z-index:1000;
+}
+
+.slideshow canvas{
+    display:none;
+    position:absolute;
+    z-index:100;
+}
+
+.slideshow .arrow {
+	position:absolute;
+	height:50px;
+	width:50px;
+	padding: 180px 240px 180px 150px;
+
+	margin: 0 -60px 0 -60px;
+	
+	cursor:pointer;
+	z-index:5000;
+	opacity: .2;
+}
+
+.slideshow .previous { 
+	background-position:left top;
+	left:0;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-moz-transform:rotate(180deg); /* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+	-o-transform:rotate(180deg); /* Opera */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); /* IE 7/8 */
+}
+.slideshow .previous:hover { 
+	background-position:left bottom;
+	opacity: .8;
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	-transition: opacity .3s ease;
+}
+
+.slideshow .next { 
+	background-position:right top;
+	right:0;
+}
+.slideshow .next:hover { 
+	background-position:right bottom;
+	opacity: .8;
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	-transition: opacity .3s ease;
+}
