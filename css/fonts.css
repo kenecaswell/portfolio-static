@@ -1,0 +1,37 @@
+
+/* 
+Helpful app for splitting up Mac fonts
+http://peter.upfold.org.uk/projects/dfontsplitter
+
+Font conversion
+http://www.freefontconverter.com
+http://orionevent.comxa.com/otf2woff.html
+http://www.kirsle.net/wizards/ttf2eot.cgi
+*/
+
+@font-face { /* declare fonts */
+	font-family: "Helvetica Neue";
+	src: url("../fonts/HelveticaNeue.eot"); /* FOR IE */
+	src: local("HelveticaNeue"), local("Helvetica Neue"),
+		url("../fonts/HelveticaNeue.woff") format("woff"),
+		url("../fonts/HelveticaNeue.otf") format("opentype"),
+		url("../fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
+	}
+	
+@font-face { /* declare fonts */
+	font-family: "Helvetica Neue Light";
+	src: url("../fonts/HelveticaNeueLight.eot"); /* FOR IE */
+	src: local("HelveticaNeueLight"), local("Helvetica Neue Light"),
+		url("../fonts/HelveticaNeueLight.woff") format("woff"),
+		url("../fonts/HelveticaNeueLight.otf") format("opentype"),
+		url("../fonts/HelveticaNeueLight.svg#HelveticaNeueLight") format("svg");
+	}
+	
+@font-face { /* declare fonts */
+	font-family: "Helvetica Neue Ultra Light";
+	src: url("../fonts/HelveticaNeueUltraLight.eot"); /* FOR IE */
+	src: local("HelveticaNeueUltraLight"), local("Helvetica Neue Ultra Light"),
+		url("../fonts/HelveticaNeueUltraLight.woff") format("woff"),
+		url("../fonts/HelveticaNeueUltraLight.otf") format("opentype"),
+		url("../fonts/HelveticaNeueUltraLight.svg#HelveticaNeueUltraLight") format("svg");
+	}
